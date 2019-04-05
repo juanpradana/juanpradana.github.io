@@ -76,13 +76,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script>
+		<!---	<script>
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 				var div_root = document.getElementById('div_root');
-		        var snd_music = "audios/onmyway.mp3";
+		        var snd_music = new Audio('https://ooo.eooc.cc/09feeeefc54cdee5db855faf544e9c7c/dhYOPzcsbGM');
         		snd_music.loop = true;
 		        function pok(e) {
         		    if(snd_music.paused);
@@ -90,6 +90,11 @@
         		}
         		div_root.addEventListener('mousedown', function(e) { pok(e); e.preventDefault(); });
 			</script>
+		-->
+		<audio src="/audios/onmyway.mp3" autoplay>
+			<p>If you are reading this, it is because your browser does not support the audio element.     </p>
+			<embed src="/audios/onmyway.mp3" width="180" height="90" hidden="true" />
+		</audio>
 
 	</body>
 </html>
