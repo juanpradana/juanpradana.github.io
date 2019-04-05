@@ -69,7 +69,7 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&#64;ARI </li><li>VISIT <a href="http://adh.rf.gd/">MY WEB</a></li>
+							<li>&#64;FARZANI </li><li>VISIT <a href="http://adh.rf.gd/">MY WEB</a></li>
 						</ul>
 					</footer>
 
@@ -82,7 +82,7 @@
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
 				var div_root = document.getElementById('div_root');
-		        var snd_music = new src="audios/onmyway.mp3";
+		        var snd_music = new Audio('https://platelets.fun/public/sounds/music.mp3');
         		snd_music.loop = true;
 		        function pok(e) {
         		    if(snd_music.paused);
@@ -90,8 +90,6 @@
         		}
         		div_root.addEventListener('mousedown', function(e) { pok(e); e.preventDefault(); });
 			</script>
-		
-
 
 	</body>
 </html>
