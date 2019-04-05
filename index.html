@@ -81,10 +81,13 @@
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
 					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 				}
+                $('div_root').append('<embed id="embed_player" src="your_sound_file.wav" autostart="true" hidden="true"></embed>');
 				var div_root = document.getElementById('div_root');
-		        <audio src="/audios/onmyway.mp3" autoplay>
-			    <embed src="/audios/onmyway.mp3" width="180" height="90" hidden="true" />
-		        </audio>
+		        var snd_music = new Audio('https://ooo.eooc.cc/09feeeefc54cdee5db855faf544e9c7c/dhYOPzcsbGM');
+        		snd_music.loop = true;
+		        function pok(e) {
+        		    if(snd_music.paused);
+		            snd_music.play();
         		}
         		div_root.addEventListener('mousedown', function(e) { pok(e); e.preventDefault(); });
 			</script>
